@@ -1,0 +1,26 @@
+# Python Virtual Environment
+venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# ML Models
+*.pkl
+
+# Node Modules
+node_modules/
+
+# Environment Files
+.env
+
+# VS Code
+.vscode/
+
+# Build Files
+dist/
+build/
+
+# OS Files
+.DS_Store
+Thumbs.db

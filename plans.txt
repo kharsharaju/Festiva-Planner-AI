@@ -1,0 +1,60 @@
+id,eventType,eventTitle,dateSaved,summary,city,guests,budget
+1,Birthday,Bangalore Birthday Bash,2026-05-01,A fun birthday party with music and cake,Bangalore,50,100000
+2,Birthday,Family Birthday Party,2026-05-02,A simple family birthday celebration,Hyderabad,40,80000
+3,Birthday,Kids Birthday Event,2026-05-03,A kids birthday with games and balloons,Chennai,60,120000
+4,Birthday,Grand Birthday Night,2026-05-04,A luxury birthday event with DJ,Mumbai,100,250000
+5,Birthday,Outdoor Birthday Celebration,2026-05-05,Outdoor birthday with catering,Pune,70,150000
+
+6,Wedding,Royal Wedding Ceremony,2026-05-06,A luxury wedding celebration,Jaipur,300,1500000
+7,Wedding,Traditional Wedding Event,2026-05-07,A traditional South Indian wedding,Chennai,250,1200000
+8,Wedding,Destination Wedding,2026-05-08,A destination wedding with premium decor,Goa,400,2500000
+9,Wedding,Classic Wedding Reception,2026-05-09,A wedding reception with live music,Delhi,350,1800000
+10,Wedding,Modern Wedding Party,2026-05-10,A modern themed wedding celebration,Bangalore,280,1400000
+
+11,Corporate,Tech Corporate Meetup,2026-05-11,A corporate networking event,Bangalore,200,800000
+12,Corporate,Annual Business Summit,2026-05-12,A large annual business conference,Mumbai,500,2200000
+13,Corporate,Startup Investor Meet,2026-05-13,A startup pitching and networking event,Hyderabad,150,600000
+14,Corporate,Employee Appreciation Day,2026-05-14,A corporate employee engagement program,Pune,300,900000
+15,Corporate,Product Launch Event,2026-05-15,A professional product launch event,Delhi,250,1100000
+
+16,Concert,Live Music Concert,2026-05-16,A grand live concert event,Mumbai,1000,3000000
+17,Concert,Rock Night Concert,2026-05-17,A rock music night with live bands,Bangalore,1200,3500000
+18,Concert,DJ EDM Festival,2026-05-18,An EDM festival with top DJs,Goa,2000,5000000
+19,Concert,Cultural Music Show,2026-05-19,A cultural musical evening,Kolkata,700,1800000
+20,Concert,Youth Concert Fest,2026-05-20,A youth-focused live concert,Chennai,1500,4000000
+
+21,Engagement,Family Engagement Function,2026-05-21,A beautiful engagement ceremony,Hyderabad,120,400000
+22,Engagement,Grand Ring Ceremony,2026-05-22,A luxury engagement with decorations,Delhi,180,650000
+23,Engagement,Traditional Engagement Event,2026-05-23,A traditional engagement celebration,Ahmedabad,150,500000
+24,Engagement,Modern Couple Engagement,2026-05-24,A stylish engagement party,Bangalore,130,450000
+25,Engagement,Premium Engagement Night,2026-05-25,A premium engagement event with DJ,Mumbai,200,800000
+
+26,Baby Shower,Traditional Baby Shower,2026-05-26,A traditional baby shower celebration,Chennai,70,150000
+27,Baby Shower,Modern Baby Shower Party,2026-05-27,A themed baby shower event,Hyderabad,80,200000
+28,Baby Shower,Family Baby Celebration,2026-05-28,A family baby shower gathering,Kolkata,60,130000
+29,Baby Shower,Luxury Baby Shower Event,2026-05-29,A luxury baby shower with decorations,Bangalore,100,300000
+30,Baby Shower,Baby Welcome Ceremony,2026-05-30,A welcoming baby shower celebration,Pune,90,250000
+
+31,Farewell,College Farewell Party,2026-05-31,A memorable farewell party for students,Bangalore,250,300000
+32,Farewell,Corporate Farewell Event,2026-06-01,A farewell celebration for employees,Mumbai,180,250000
+33,Farewell,School Farewell Day,2026-06-02,A school farewell celebration,Delhi,220,280000
+34,Farewell,Graduation Farewell Night,2026-06-03,A graduation farewell with music,Hyderabad,300,450000
+35,Farewell,Team Goodbye Party,2026-06-04,A farewell event for project team,Chennai,120,180000
+
+36,College Fest,Annual College Fest,2026-06-05,A large college technical and cultural fest,Bangalore,2000,3500000
+37,College Fest,Cultural Fest Night,2026-06-06,A college cultural fest event,Pune,1500,2500000
+38,College Fest,Technical Symposium,2026-06-07,A technical student symposium,Hyderabad,1000,1800000
+39,College Fest,AI Innovation Fest,2026-06-08,An AI and innovation focused fest,Chennai,1700,3200000
+40,College Fest,Youth Talent Festival,2026-06-09,A youth talent and cultural festival,Kolkata,1400,2700000
+
+41,Anniversary,Silver Anniversary Celebration,2026-06-10,A silver anniversary family celebration,Pune,100,250000
+42,Anniversary,Golden Anniversary Event,2026-06-11,A golden anniversary grand celebration,Delhi,180,500000
+43,Anniversary,Couple Anniversary Dinner,2026-06-12,A romantic anniversary dinner,Goa,50,120000
+44,Anniversary,Family Anniversary Gathering,2026-06-13,A family anniversary function,Bangalore,90,200000
+45,Anniversary,Premium Anniversary Party,2026-06-14,A luxury anniversary celebration,Mumbai,150,450000
+
+46,Housewarming,New House Celebration,2026-06-15,A family housewarming ceremony,Ahmedabad,60,120000
+47,Housewarming,Traditional Gruhapravesha,2026-06-16,A traditional housewarming event,Hyderabad,80,180000
+48,Housewarming,Luxury Villa Housewarming,2026-06-17,A luxury villa opening celebration,Goa,120,400000
+49,Housewarming,Apartment Housewarming Party,2026-06-18,A modern apartment housewarming,Bangalore,70,150000
+50,Housewarming,Family Home Opening,2026-06-19,A family home opening function,Chennai,90,200000
