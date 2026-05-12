@@ -1,0 +1,13 @@
+{
+  "user_text": "How to plan a wedding?",
+  "budget": 1000000,
+  "guests": 200,
+  "duration": 2,
+  "city": "Bangalore"
+}
+
+Run 1 : python -m uvicorn app.main:app --reload
+
+http://127.0.0.1:8000/docs
+
+Run 2 : python -m streamlit run app/ui.py

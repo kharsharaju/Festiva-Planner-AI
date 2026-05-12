@@ -1,0 +1,11 @@
+event_type,budget,guests,city,event_duration_days,venue_type,catering_cost,decoration_cost,venue_cost,entertainment_cost
+wedding,1000000,200,Bangalore,2,indoor,400000,300000,200000,100000
+wedding,800000,150,Bangalore,1,indoor,300000,200000,200000,100000
+birthday,200000,50,Bangalore,1,outdoor,80000,50000,40000,30000
+corporate,500000,100,Bangalore,2,conference,200000,150000,100000,50000
+wedding,1200000,300,Delhi,3,outdoor,500000,300000,250000,150000
+corporate,700000,150,Mumbai,2,conference,250000,200000,150000,100000
+birthday,150000,40,Delhi,1,indoor,60000,40000,30000,20000
+wedding,900000,180,Mumbai,2,indoor,350000,250000,200000,100000
+corporate,600000,120,Delhi,2,conference,220000,180000,120000,80000
+birthday,250000,60,Mumbai,1,outdoor,100000,60000,50000,40000

@@ -1,0 +1,191 @@
+Design a modern, premium, visually stunning web UI for an AI-powered platform called Festiva Planner AI.
+
+The design should feel high-end, minimal, and aesthetic, similar to modern creative agency websites (like Cubiq style), with smooth typography, soft gradients, elegant spacing, and subtle animations.
+
+
+
+🌐 Overall Design Style
+
+Dark + light mixed theme (premium feel)
+
+Soft shadows, glassmorphism, and gradient accents
+
+Clean typography (large hero text, elegant headings)
+
+Card-based layout with rounded corners
+
+Smooth hover effects and micro-interactions
+
+Use icons and illustrations related to events (weddings, parties, corporate)
+
+
+
+🧩 Page Structure
+
+🏠 Hero Section
+
+Large headline: "Plan your perfect event with AI intelligence"
+
+Subtext: AI-powered planning for weddings, corporate events, and celebrations
+
+CTA Buttons:
+
+“Create Plan”
+
+“Explore Features”
+
+Add aesthetic visuals (event illustrations / 3D objects)
+
+
+
+🧾 Input Section (Main Feature)
+
+Design a premium form card with:
+
+Event Description (text input)
+
+Budget (number input)
+
+Guests (number input)
+
+Duration (days)
+
+City (dropdown or input)
+
+Include:
+
+Floating labels
+
+Icons inside inputs
+
+“Generate Plan” button (highlighted)
+
+
+
+⚡ Loading State
+
+Add a modern animated loader
+
+Show AI processing steps (e.g., “Analyzing event…”, “Predicting budget…”)
+
+
+
+📊 Output UI Sections (Important)
+
+1. 🎉 Event Type
+
+Display as a highlight card
+
+Example: “Wedding”
+
+Add icon + subtle animation
+
+
+
+2. 💰 Budget Allocation
+
+Show as:
+
+Pie Chart (recommended) OR
+
+Premium stat cards
+
+Categories:
+
+Catering
+
+Decoration
+
+Venue
+
+Entertainment
+
+
+
+3. 🗓️ Timeline
+
+Step-by-step vertical timeline UI
+
+Each step as a card/checklist item
+
+Example:
+
+Book venue
+
+Hire caterer
+
+Decoration setup
+
+
+
+4. 🏢 Vendors Section
+
+Grid-based layout
+
+Group by category (tabs or sections)
+
+Each vendor card should include:
+
+Name
+
+Price
+
+Rating ⭐
+
+City
+
+Contact button
+
+Make cards visually rich with:
+
+Icons
+
+Subtle hover animation
+
+
+
+5. 🧠 AI Advice Section
+
+Styled as a highlight info box
+
+Use soft background color or gradient
+
+Include icon (💡)
+
+Display intelligent planning suggestions
+
+
+
+✨ Extra Features (Optional UI Enhancements)
+
+Download as PDF button
+
+Save plan feature
+
+Smooth scroll animations
+
+Sticky navbar
+
+Responsive mobile-first design
+
+
+
+⚙️ Backend Integration
+
+Use API:
+
+POST /plan-event
+
+Request:
+
+user_text
+
+budget
+
+guests
+
+duration
+
+city
+
+Display response dynamically in UI sections

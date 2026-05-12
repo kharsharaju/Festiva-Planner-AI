@@ -1,0 +1,32 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "6UYzt3IlVMRGKRw7uuLgg"
+uri = "file://artifacts/festiva-planner/src/assets/images/hero-illustration.png"
+type = "image"
+title = "Hero celebration ink illustration"
+
+[[generated]]
+id = "TXa1ToJFVYlfhlo1SwZnl"
+uri = "file://artifacts/festiva-planner/src/assets/images/doodle-star.png"
+type = "image"
+title = "Ink doodle star mint"
+
+[[generated]]
+id = "fgkd6K4nlIrV3uVUnpoS5"
+uri = "file://artifacts/festiva-planner/src/assets/images/doodle-arrow.png"
+type = "image"
+title = "Ink doodle arrow coral"
+
+[[generated]]
+id = "S8J4oHF9FnIyJT2iY2cV9"
+uri = "file://artifacts/festiva-planner/src/assets/images/doodle-stamp.png"
+type = "image"
+title = "Ink doodle stamp mustard"
+
+[[generated]]
+id = "kscxiqepmrnISbxrat761"
+uri = "file://artifacts/festiva-planner/src/assets/images/doodle-sparkle.png"
+type = "image"
+title = "Ink doodle sparkle coral"

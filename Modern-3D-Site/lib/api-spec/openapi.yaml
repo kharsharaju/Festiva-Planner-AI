@@ -1,0 +1,329 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: plan
+    description: AI event planning operations
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+  /plan-event:
+    post:
+      operationId: planEvent
+      tags: [plan]
+      summary: Generate an AI-powered event plan
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PlanEventBody"
+      responses:
+        "200":
+          description: Generated event plan
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EventPlan"
+  /plans:
+    get:
+      operationId: listPlans
+      tags: [plan]
+      summary: List recent saved plans
+      responses:
+        "200":
+          description: Recent plans
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/SavedPlanSummary"
+    post:
+      operationId: savePlan
+      tags: [plan]
+      summary: Save a generated plan
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SavePlanBody"
+      responses:
+        "201":
+          description: Saved plan summary
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SavedPlanSummary"
+  /plans/{id}:
+    get:
+      operationId: getPlan
+      tags: [plan]
+      summary: Get a saved plan by id
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Saved plan
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SavedPlan"
+        "404":
+          description: Not found
+  /stats:
+    get:
+      operationId: getStats
+      tags: [plan]
+      summary: Aggregate stats across all generated plans
+      responses:
+        "200":
+          description: Aggregated stats
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PlanStats"
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+    PlanEventBody:
+      type: object
+      properties:
+        user_text:
+          type: string
+          description: Free-form description of the event
+          minLength: 3
+        budget:
+          type: number
+          minimum: 0
+        guests:
+          type: integer
+          minimum: 1
+        duration:
+          type: integer
+          minimum: 1
+          description: Number of days
+        city:
+          type: string
+          minLength: 1
+      required:
+        - user_text
+        - budget
+        - guests
+        - duration
+        - city
+    BudgetCategory:
+      type: object
+      properties:
+        name:
+          type: string
+        amount:
+          type: number
+        percent:
+          type: number
+        note:
+          type: string
+      required:
+        - name
+        - amount
+        - percent
+    TimelineStep:
+      type: object
+      properties:
+        title:
+          type: string
+        when:
+          type: string
+          description: Human-friendly timing (e.g. "8 weeks before")
+        description:
+          type: string
+      required:
+        - title
+        - when
+        - description
+    Vendor:
+      type: object
+      properties:
+        name:
+          type: string
+        category:
+          type: string
+        price:
+          type: number
+        rating:
+          type: number
+        city:
+          type: string
+        contact:
+          type: string
+        tagline:
+          type: string
+      required:
+        - name
+        - category
+        - price
+        - rating
+        - city
+        - contact
+        - tagline
+    EventPlan:
+      type: object
+      properties:
+        eventType:
+          type: string
+        eventTitle:
+          type: string
+        summary:
+          type: string
+        budget:
+          type: number
+        guests:
+          type: integer
+        duration:
+          type: integer
+        city:
+          type: string
+        budgetAllocation:
+          type: array
+          items:
+            $ref: "#/components/schemas/BudgetCategory"
+        timeline:
+          type: array
+          items:
+            $ref: "#/components/schemas/TimelineStep"
+        vendors:
+          type: array
+          items:
+            $ref: "#/components/schemas/Vendor"
+        aiAdvice:
+          type: array
+          items:
+            type: string
+      required:
+        - eventType
+        - eventTitle
+        - summary
+        - budget
+        - guests
+        - duration
+        - city
+        - budgetAllocation
+        - timeline
+        - vendors
+        - aiAdvice
+    SavePlanBody:
+      type: object
+      properties:
+        plan:
+          $ref: "#/components/schemas/EventPlan"
+      required:
+        - plan
+    SavedPlanSummary:
+      type: object
+      properties:
+        id:
+          type: integer
+        eventType:
+          type: string
+        eventTitle:
+          type: string
+        city:
+          type: string
+        budget:
+          type: number
+        guests:
+          type: integer
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - eventType
+        - eventTitle
+        - city
+        - budget
+        - guests
+        - createdAt
+    SavedPlan:
+      type: object
+      properties:
+        id:
+          type: integer
+        createdAt:
+          type: string
+          format: date-time
+        plan:
+          $ref: "#/components/schemas/EventPlan"
+      required:
+        - id
+        - createdAt
+        - plan
+    PlanStats:
+      type: object
+      properties:
+        totalPlans:
+          type: integer
+        totalBudgetPlanned:
+          type: number
+        totalGuestsPlanned:
+          type: integer
+        topEventTypes:
+          type: array
+          items:
+            type: object
+            properties:
+              eventType:
+                type: string
+              count:
+                type: integer
+            required:
+              - eventType
+              - count
+        topCities:
+          type: array
+          items:
+            type: object
+            properties:
+              city:
+                type: string
+              count:
+                type: integer
+            required:
+              - city
+              - count
+      required:
+        - totalPlans
+        - totalBudgetPlanned
+        - totalGuestsPlanned
+        - topEventTypes
+        - topCities

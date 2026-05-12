@@ -1,0 +1,44 @@
+vendor_name,category,price,rating,city,experience_years,availability,contact,email
+ABC Caterers,catering,200000,4.5,Bangalore,10,yes,9876543210,abc@catering.com
+Elite Caterers,catering,300000,4.7,Bangalore,12,yes,9876543211,elite@catering.com
+Budget Caterers,catering,120000,4.0,Bangalore,6,yes,9876543212,budget@catering.com
+Royal Feast,catering,250000,4.6,Bangalore,9,no,9876543213,royal@catering.com
+Delhi Caterers,catering,220000,4.4,Delhi,11,yes,9876543214,delhi@catering.com
+Grand Catering,catering,350000,4.8,Bangalore,15,yes,9876543215,grand@catering.com
+Home Style Caterers,catering,90000,3.9,Bangalore,4,yes,9876543216,home@catering.com
+Premium Caterers,catering,400000,4.9,Bangalore,18,yes,9876543217,premium@catering.com
+Quick Bites,catering,80000,3.8,Bangalore,3,no,9876543218,quick@catering.com
+Luxury Catering,catering,500000,5.0,Bangalore,20,yes,9876543219,luxury@catering.com
+
+Royal Decor,decoration,150000,4.2,Bangalore,7,yes,9876501234,royal@decor.com
+Elite Decor,decoration,250000,4.6,Bangalore,10,yes,9876501235,elite@decor.com
+Budget Decor,decoration,80000,3.9,Bangalore,5,yes,9876501236,budget@decor.com
+Floral Designs,decoration,180000,4.3,Bangalore,8,no,9876501237,floral@decor.com
+Delhi Decor,decoration,160000,4.4,Delhi,9,yes,9876501238,delhi@decor.com
+Grand Decor,decoration,300000,4.7,Bangalore,12,yes,9876501239,grand@decor.com
+Simple Decor,decoration,60000,3.7,Bangalore,4,yes,9876501240,simple@decor.com
+Premium Decor,decoration,350000,4.9,Bangalore,15,yes,9876501241,premium@decor.com
+Theme Decor,decoration,200000,4.5,Bangalore,11,no,9876501242,theme@decor.com
+Luxury Decor,decoration,450000,5.0,Bangalore,20,yes,9876501243,luxury@decor.com
+
+Grand Hall,venue,300000,4.7,Bangalore,15,no,9123456780,grand@venue.com
+City Hall,venue,180000,4.3,Bangalore,8,yes,9123456781,city@venue.com
+Budget Venue,venue,200000,4.1,Bangalore,6,yes,9123456782,budget@venue.com
+Elite Venue,venue,400000,4.8,Bangalore,12,yes,9123456783,elite@venue.com
+Delhi Hall,venue,220000,4.5,Delhi,10,yes,9123456784,delhi@venue.com
+Open Lawn,venue,150000,4.0,Bangalore,7,yes,9123456785,lawn@venue.com
+Luxury Palace,venue,600000,5.0,Bangalore,20,yes,9123456786,palace@venue.com
+Community Hall,venue,100000,3.8,Bangalore,5,yes,9123456787,community@venue.com
+Banquet Hall,venue,250000,4.4,Bangalore,9,no,9123456788,banquet@venue.com
+Premium Venue,venue,500000,4.9,Bangalore,18,yes,9123456789,premium@venue.com
+
+Fun Events,entertainment,100000,4.3,Bangalore,5,yes,9988776655,fun@events.com
+DJ Beats,entertainment,80000,4.1,Bangalore,6,yes,9988776656,dj@events.com
+Live Band,entertainment,150000,4.6,Bangalore,9,yes,9988776657,band@events.com
+Magic Show,entertainment,60000,3.9,Bangalore,4,no,9988776658,magic@events.com
+Dance Crew,entertainment,120000,4.4,Bangalore,7,yes,9988776659,dance@events.com
+Delhi Events,entertainment,110000,4.2,Delhi,8,yes,9988776660,delhi@events.com
+Premium Events,entertainment,200000,4.8,Bangalore,12,yes,9988776661,premium@events.com
+Kids Fun,entertainment,50000,3.7,Bangalore,3,yes,9988776662,kids@events.com
+Celebrity Show,entertainment,400000,5.0,Bangalore,15,yes,9988776663,celebrity@events.com
+Theater Group,entertainment,90000,4.0,Bangalore,6,no,9988776664,theater@events.com
